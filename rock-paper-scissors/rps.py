@@ -5,6 +5,21 @@
 #Make nice looking output
 #Add error checking/handling
 
+def convert_lower_case(phrase):
+    '''
+    Parameters
+    ----------
+    phrase : String
+        String in which you want to convert to all lower case letters.
+
+    Returns
+    -------
+    String
+        Lower case version of phrase
+    '''
+    
+
+
 def rps_result(p1, p2):
     '''
     Important:
@@ -26,6 +41,9 @@ def rps_result(p1, p2):
     p1w = "Player one won."
     p2w = "Player two won."
     pt = "Players tied."
+    #Convert inputs to lower case to make the function non case sensitive
+    p1 = p1.lower()
+    p2 = p2.lower()
     if p1 == p2:
         return pt
     else:
