@@ -1,23 +1,8 @@
 #July 26 2020 9:00pm
 #Two player rock paper scissors
 
-#TODO Make rps_result not case sensitive
 #Make nice looking output
-#Add error checking/handling
 
-def convert_lower_case(phrase):
-    '''
-    Parameters
-    ----------
-    phrase : String
-        String in which you want to convert to all lower case letters.
-
-    Returns
-    -------
-    String
-        Lower case version of phrase
-    '''
-    
 
 
 def rps_result(p1, p2):
@@ -64,10 +49,10 @@ def rps_result(p1, p2):
                 return p1w
 
 while True:
-    p1_move = input("Player one enter your move.")
-    p2_move = input("Player two enter your move.")
+    p1_move = input("Player one enter your move. ")
+    p2_move = input("Player two enter your move. ")
     print(rps_result(p1_move, p2_move))
-    if input("Would you like to play again? y/n") == 'n':
+    if input("Would you like to play again? y/n ") == 'n':
         break
     
 
